@@ -1,4 +1,4 @@
-body {
+                            body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ nav.transparent-nav {
     color: var(--text-color);
     padding: 10px;
     backdrop-filter: blur(10px);
-    margin-top: 15px;
+    margin-top: 15px; 
 }
 
 body.dark nav.transparent-nav {
@@ -36,8 +36,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
-    gap: 15px;
+    justify-content: center;
+    gap: 15px; 
 }
 
 nav ul li {
@@ -106,7 +106,8 @@ p {
 }
 
 .gallery img {
-    width: 200px;
+    width: auto; 
+    max-width: 90%; 
     height: auto;
     border-radius: 15px;
 }
