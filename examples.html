@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Examples of Agile SDLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="navbar"></div>
+            <button id="theme-toggle" class="theme-toggle"><i class="fas fa-adjust"></i></button>
+        </header>
+
+        <section>
+            <h1>h</h1>
+            <p><strong>e:</strong> p</p>
+            <p><strong>e:</strong> p</p>
+        </section>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script>
+        // Dark/Light mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        document.body.className = currentTheme;
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.className === 'light' ? 'dark' : 'light';
+            document.body.className = newTheme;
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
