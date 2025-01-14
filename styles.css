@@ -17,10 +17,11 @@ body.dark {
     --text-color: #f4f4f4;
 }
 
-nav {
-    background-color: var(--text-color);
-    color: var(--background-color);
+nav.transparent-nav {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--text-color);
     padding: 10px;
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -37,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--background-color);
+    color: var(--text-color);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -69,7 +70,7 @@ p {
 .theme-toggle {
     background: none;
     border: none;
-    color: var(--background-color);
+    color: var(--text-color);
     cursor: pointer;
     position: absolute;
     top: 15px;
