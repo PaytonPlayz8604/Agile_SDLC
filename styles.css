@@ -10,11 +10,13 @@ body {
 :root {
     --background-color: #f4f4f4;
     --text-color: #333;
+    --hover-background: #007BFF;
 }
 
 body.dark {
     --background-color: #333;
     --text-color: #f4f4f4;
+    --hover-background: #1E90FF; 
 }
 
 nav.transparent-nav {
@@ -22,6 +24,10 @@ nav.transparent-nav {
     color: var(--text-color);
     padding: 10px;
     backdrop-filter: blur(10px);
+}
+
+body.dark nav.transparent-nav {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -42,6 +48,9 @@ nav ul li a {
     text-decoration: none;
     display: flex;
     align-items: center;
+    padding: 5px 10px;
+    border-radius: 30px; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a i {
@@ -49,7 +58,8 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: var(--hover-background);
+    color: #fff;
 }
 
 section {
