@@ -1,1 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
 
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body.dark {
+    --background-color: #333;
+    --text-color: #f4f4f4;
+}
+
+nav {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--background-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--background-color);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
