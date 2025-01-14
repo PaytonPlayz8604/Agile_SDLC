@@ -10,19 +10,19 @@ body {
 :root {
     --background-color: #f4f4f4;
     --text-color: #333;
-    --hover-background: #00FFFF; 
+    --hover-background: #007BFF;
 }
 
 body.dark {
     --background-color: #333;
     --text-color: #f4f4f4;
-    --hover-background: #00FFFF; 
+    --hover-background: #1E90FF; 
 }
 
 nav.transparent-nav {
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--text-color);
-    padding: 0px;
+    padding: 10px;
     backdrop-filter: blur(10px);
     margin-top: 15px; 
 }
@@ -37,7 +37,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; 
-    gap: 50px; 
+    gap: 15px; 
 }
 
 nav ul li {
@@ -51,7 +51,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 5px 10px;
-    border-radius: 30px; 
+    border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -86,4 +86,22 @@ p {
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
