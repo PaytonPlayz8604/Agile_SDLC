@@ -27,7 +27,7 @@ nav.transparent-nav {
 }
 
 body.dark nav.transparent-nav {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(--background-color);
 }
 
 nav ul {
