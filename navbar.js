@@ -4,4 +4,4 @@ fetch('navbar.html')
         document.getElementById('navbar').innerHTML = data;
     });
 
-console.log("Navigation bar has loaded. Hi Mr. French! :)")
+console.log("Hi Mr. French! :)")
