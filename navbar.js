@@ -4,4 +4,4 @@ fetch('navbar.html')
         document.getElementById('navbar').innerHTML = data;
     });
 
-console.log("Welcome, this website provides information about the SDLC model named Agile. Also, hello Mr. French!")
+console.log("Navigation bar has loaded. Hi Mr. French! :)")
