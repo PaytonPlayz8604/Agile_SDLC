@@ -12,8 +12,8 @@ body {
     --text-color: #333;
     --hover-background: #007BFF;
     --link-color: #333;
-    --link-hover-color: #007BFF;
     --link-visited-color: #333;
+    --link-hover-color: #007BFF;
 }
 
 body.dark {
@@ -21,8 +21,8 @@ body.dark {
     --text-color: #f4f4f4;
     --hover-background: #007BFF;
     --link-color: #f4f4f4;
-    --link-hover-color: #007BFF;
     --link-visited-color: #f4f4f4;
+    --link-hover-color: #007BFF;
 }
 
 nav.transparent-nav {
